@@ -49,6 +49,38 @@
             </objects>
             <point key="canvasLocation" x="100" y="3.5211267605633805"/>
         </scene>
+        <!--Selected View Controller-->
+        <scene sceneID="vqh-cZ-Ymi">
+            <objects>
+                <viewController id="eOC-UZ-bWP" customClass="SelectedViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="582-Ri-FjY">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CW4-NE-e34">
+                                <rect key="frame" x="175" y="218" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LOj-vT-vNr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LOj-vT-vNr" firstAttribute="trailing" secondItem="CW4-NE-e34" secondAttribute="trailing" constant="176" id="Ehx-7y-a1B"/>
+                            <constraint firstItem="CW4-NE-e34" firstAttribute="top" secondItem="LOj-vT-vNr" secondAttribute="top" constant="159" id="IXj-F7-NjM"/>
+                            <constraint firstItem="LOj-vT-vNr" firstAttribute="bottom" secondItem="CW4-NE-e34" secondAttribute="bottom" constant="579" id="ZgV-fS-sfZ"/>
+                            <constraint firstItem="CW4-NE-e34" firstAttribute="leading" secondItem="LOj-vT-vNr" secondAttribute="leading" constant="175" id="jJb-0v-RXL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="CW4-NE-e34" id="Pbq-ge-ynD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fSX-k2-eUj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="917" y="4"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
