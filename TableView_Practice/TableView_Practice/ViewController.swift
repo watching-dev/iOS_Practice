@@ -6,29 +6,50 @@
 //
 
 import UIKit
-
-class ViewController: UIViewController, UITableViewDataSource {
+/*
+ 
+    필요 준비물
+    UITableView, UITableViewDataSource, Model
+ 
+ */
+class ViewController: UIViewController {
 
     @IBOutlet weak var uiTableView: UITableView!
     
-    var modelData = ["1", "2", "3", "4"]
+    var dataSource = TableDataResource()
+    var dataModel = TableDataModel(dataList: ["1", "2"])
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        uiTableView.dataSource = self
+        dataSource.dataList = dataModel.dataList
+        uiTableView.dataSource = dataSource
     }
+}
 
+class TableDataResource: NSObject, UITableViewDataSource {
+
+    var dataList: [String] = []
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
-        return modelData.count
+        return dataList.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = modelData[indexPath.row]
-        
+        cell.textLabel?.text = dataList[indexPath.row]
+
         return cell
+    }
+}
+
+struct TableDataModel {
+
+    let dataList: [String]
+
+    init(dataList: [String]) {
+
+        self.dataList = dataList
     }
 }
