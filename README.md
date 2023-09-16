@@ -3,7 +3,7 @@ iOS Practice History
 
 ***
 
-#### git 명령어 정리
+#### git 명령어 정리(습관적으로 config -l 과 branch 확인 / 계정정보와 브랜치는 수시로 확인)
 
 ```
 브랜치 관련
