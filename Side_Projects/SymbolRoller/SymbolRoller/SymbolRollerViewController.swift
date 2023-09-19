@@ -18,7 +18,7 @@ class SymbolRollerViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
+//        button.configuration?.cornerStyle = .capsule
         // TO-DO:
         // - symbols에서 랜덤으로 하나 추출
         // - 이미지와 텍스트 연결
