@@ -49,5 +49,6 @@ extension ViewController: UITableViewDelegate {
         // 현재 화면위에 SelectedViewController 생성해서 띄움
         let vc: UIViewController = SelectedViewController()
         present(vc, animated: true)
+//        show(vc, sender: self)
     }
 }
