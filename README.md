@@ -76,6 +76,9 @@ Xcode 관련
 
 - *(shift + 8) 하니까 선택된 단어를 찾아서 다음으로 이동함
 - #(shift + 3) 하니까 선택된 단어를 찾아서 이전으로 이동함
+
+- command + shift + L: 스토리보드에서 컴포넌트 검색
+- command + option + control + enter: 스토리보드에서 assistant(스토리보드 컴포넌트를 코드와 연결하도록 화면 두개 열리는거)
 ```
 
 ```
