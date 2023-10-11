@@ -10,10 +10,11 @@ iOS Practice History
 - git branch: 브랜치 확인
 - git branch -a: 원격 포함해서 전체 브랜치 확인
 - git branch -r: 원격 브랜치 확인
-- git switch 브랜치_이름: 브랜치_이름으로 브랜치 변경(이동) -- 차이가 뭐지..
-- git checkout 브랜치_이름: 브랜치_이름으로 브랜치 변경(이동) -- 차이가 뭐지..
+- ~~git switch 브랜치_이름: 브랜치_이름으로 브랜치 변경(이동) -- 차이가 뭐지..~~
+- git checkout 브랜치_이름: 브랜치_이름으로 브랜치 변경(이동) -- 차이가 뭐지.._그냥 이걸로 사용, 원격까지 같이 설정
 - git checkout -b 브랜치_이름: 브랜치_이름 으로 브랜치 만들고 브랜치 변경(이동)
 - git branch 브랜치_이름: 브랜치_이름 으로 새로운 브랜치 생성(이동은 안함)
+- git branch -d 브랜치_이름: 브랜치_이름 브랜치 삭제
 
 설정 관련
 - git config -l: 깃 설정 확인
@@ -27,10 +28,12 @@ iOS Practice History
 - git push -u origin main: origin 이름의 main 브랜치로 푸시(-u 로 하면 다음부터는 git push 만 해도 자동으로 됨, 근데 그냥 매번 다 입력하는거 추천)
 - git status: 변경사항 확인
 - git log: 커밋 로그 확인
-- git fetch: 데이터 가져옴 - 아직 잘 모르겠다
+- git fetch: 데이터 가져옴 - 아직 잘 모르겠다 - 다른 브랜치 가져올때 - git fetch 한다음 - git checkout 다른_브랜치_이름 - 하면 자동으로 브랜치 변경되면서 가져옴
 - git pull: 데이터 가져와서 기존 브랜치랑 병합
 - git reset: add 해서 스테이징 한것들 전체 다 취소
 - git reset 파일명: 파일명 add 한것 취소
+- git reset --hard: 지금까지 수정한 모든것 다 취소
+- git diff: add 한것중 변환된것들 확인
 
 터미널(쉘) 관련
 - cd 이름: 이름으로 이동
@@ -78,7 +81,7 @@ Xcode 관련
 - #(shift + 3) 하니까 선택된 단어를 찾아서 이전으로 이동함
 
 - command + shift + L: 스토리보드에서 컴포넌트 검색
-- command + option + control + enter: 스토리보드에서 assistant(스토리보드 컴포넌트를 코드와 연결하도록 화면 두개 열리는거)
+- 원하는 페이지 이동에서(command + shift + O) 이동할 페이지 검색 후 option + enter 하면 스토리보드 코드에 연결할 수 있도록 페이지 나뉨
 ```
 
 ```
