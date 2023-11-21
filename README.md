@@ -13,8 +13,12 @@ iOS Practice History
 - ~~git switch 브랜치_이름: 브랜치_이름으로 브랜치 변경(이동) -- 차이가 뭐지..~~
 - git checkout 브랜치_이름: 브랜치_이름으로 브랜치 변경(이동) -- 차이가 뭐지.._그냥 이걸로 사용, 원격까지 같이 설정
 - git checkout -b 브랜치_이름: 브랜치_이름 으로 브랜치 만들고 브랜치 변경(이동)
-- git branch 브랜치_이름: 브랜치_이름 으로 새로운 브랜치 생성(이동은 안함)
-- git branch -d 브랜치_이름: 브랜치_이름 브랜치 삭제
+- ~~git branch 브랜치_이름: 브랜치_이름 으로 새로운 브랜치 생성(이동은 안함)~~
+- git branch -d 브랜치_이름: 브랜치_이름 브랜치 삭제 / 안되면 D 로
+- git merge 브랜치이름: 현재 브랜치에 브랜치이름 병합(현재 브랜치 <- 브랜치이름) / 기준이 현재 브랜치(에 추가하는것)
+- merge 할때는 꼭 새로운 브랜치 만들어서 그걸 병합하고 삭제하도록! 기존꺼를 계속 사용하려면 이렇게 해야함, 안하면 꼬인다
+- merge 에서 conflict 나오면 -> 수정하고 -> git add . -> git merge --continue -> 이렇게 해야 merge 메시지가 남음
+- git push -u origin --delete 브랜치이름: 원격 브랜치이름 브랜치 삭제 / git push -u origin :브랜치이름
 
 설정 관련
 - git config -l: 깃 설정 확인
@@ -33,7 +37,8 @@ iOS Practice History
 - git reset: add 해서 스테이징 한것들 전체 다 취소
 - git reset 파일명: 파일명 add 한것 취소
 - git reset --hard: 지금까지 수정한 모든것 다 취소
-- git diff: add 한것중 변환된것들 확인
+- git diff: 변환된것들 확인
+- git log --graph (--decorate --oneline): 커밋 로그를 그래프로 보여줌
 
 터미널(쉘) 관련
 - cd 이름: 이름으로 이동
@@ -129,4 +134,17 @@ Xcode에서는 : 명령어가 안됨. 그래서 기존 vim 명령어와 차이�
 - invisibles: 스페이스바, 엔터를 확인할 수 있음
 - Vim Mode: vim 모드 활성화
 - indexing 이 너무 오래 걸린다?: scheme 확인 - 간혹 sdk 로 설정되어 있을수 있음(재부팅, 껏켯 다 해봤는데 저 문제였음)
+```
+
+```
+Visual Studio Code
+
+- 폴더 열기: command + o 
+- 새창 열기(새로운 창 띄우는거, 2개 따로 실행할때): command + shift + n
+```
+
+```
+Item
+
+- 새창 열기(새로운 창 띄우는거, 2개 따로 실행할때): command + n
 ```
