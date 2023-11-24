@@ -88,6 +88,15 @@ Xcode 관련
 
 - command + shift + L: 스토리보드에서 컴포넌트 검색
 - 원하는 페이지 이동에서(command + shift + O) 이동할 페이지 검색 후 option + enter 하면 스토리보드 코드에 연결할 수 있도록 페이지 나뉨
+
+Xcode 파일 복붙 관련
+
+- 외부 파일을 프로젝트 안에 복사할 때(소스코드 파일같은): 복사할 곳에 마우스 오른쪽 -> view finder -> 파인더에서 저장할 위치 이동 -> 복사할 파일을 저장할 파인더 위치로 이동(복붙) -> 다시 프로젝트 마우스 오른쪽 -> Add Files to 선택 -> 아까 이동(복붙) 시킨 위치로 이동 -> 모두 선택한다음 -> Copy items if needed 선택, Create groups 선택, 타겟은 현재 타켓 선택 -> Add
+- 간혹 파일 복사된것 처럼 보이는데 정장 프로젝트 폴더 안에 파일 없는 경우가 있음
+
+- dylib 에러: no such file 이거나 dylib 에러 등 프레임워크를 pod install 했는데도 에러가 난다면 -> 버전 입력하는 General -> Frameworks, Libraries, and Embedded Content 에서 플러스 버튼 -> 프레임 워크 모두 선택 -> Add
+
+- 프레임워크 수동으로 넣는 방법: 프레임워크는 압축형태가 아니라 폴더 형태 -> 바로 위에서 했던 방법으로 파일을 프로젝트에 복붙하고 -> 버전 입력하는 General 오른쪽에 -> Build Phases -> Embed Frameworks -> 플러스 버튼 -> 프레임 워크 모두 선택 -> Add
 ```
 
 ```
